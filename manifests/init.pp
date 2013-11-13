@@ -3,10 +3,10 @@
 #  include pdftk
 
 class pdftk {
-  $version = '2.02'
+  $version = '1.44'
 
   package { 'PDFtk':
-    provider => 'pkg',
-    source   => "http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-${version}-mac_osx-10.6-setup.pkg",
+    provider => 'pkgdmg',
+    source   => "https://flexpaper-desktop-publisher.googlecode.com/files/pdftk-${version}-osx10.6.dmg",
   }
 }
